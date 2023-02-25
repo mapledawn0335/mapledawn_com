@@ -1,0 +1,500 @@
+@charset 'UTF-8'; /* PC */
+/**
+ * ViewportScale v0.2.1
+ * Copyright (c) 2018 Kite
+ * MIT License
+ */
+/*==========================================================================
+# reset - ブラウザの差異や不要なスタイルを無くすためのスタイル
+========================================================================== */
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td, small, button, time, figure {
+    border: 0;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+li, dd {
+    list-style-type: none;
+}
+
+header, footer, nav, section, article, aside, figure, figcaption {
+    display: block;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    color: #000;
+    font-family: 'source-han-sans-japanese','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    background: #FFF;
+}
+
+p {
+    word-wrap: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #313131;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #000000;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+.left, .fl {
+    float: left;
+}
+
+.right, .fr {
+    float: right;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; }
+
+.hv:hover {
+    opacity: 0.6;
+}
+
+/*
+.font-min {
+    font-family: ten-mincho, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*/
+.font-BebasNeueRegular {
+    font-family: bebas-neue-by-fontfabric, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-BebasNeueBold {
+    font-family: bebas-neue-by-fontfabric, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.sp {
+    display: none;
+}
+
+.pc {
+    display: block;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.youtube {
+    position: relative;
+    width: 100%;
+    padding-top: 26.25%;
+}
+
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: #f8c384;
+    border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-track-piece:start {
+    background: #ffead2;
+}
+
+.scroll::-webkit-scrollbar-track-piece:end {
+    background: #fff;
+}
+
+/*============================
+COMMON
+============================*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hide {
+    display: none;
+}
+
+.header {
+    background: #3e3e3e;
+    position: fixed;
+    width: calc(100% - 380px);
+    bottom: 0;
+    left: 0;
+    padding: 10px 3%;
+    z-index: 255;
+    height: 60px;
+}
+
+.header .container {
+    max-width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.header .header__logo {
+}
+
+.header__logo {
+}
+
+.header__logo a {
+    display: block;
+}
+
+.header__logo .header__logo--h1 {
+    font-size: 32px;
+    line-height: 1;
+    padding: 6px 0 0 32px;
+    color: #FFF;
+    background-image: url(../img/icon_momiji.svg);
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-position: center left;
+}
+
+.header__logo .header__logo--h1 img {
+}
+
+.header .header__navi {
+}
+
+.header__navi {
+    width: 40%;
+}
+
+.header__navi .globalnavi {
+}
+
+.globalnavi {
+}
+
+.globalnavi .globalnavi__list {
+}
+
+.globalnavi__list {
+    justify-content: flex-end;
+}
+
+.globalnavi__list li {
+    padding: 0 3% 0;
+}
+
+.globalnavi__list a {
+    color: #FFF;
+}
+
+.header .header__spbtn {
+}
+
+.header__spbtn {
+}
+
+.header__spbtn span {
+}
+
+.section {
+    height: 100vh;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.section .container {
+    background: #FFF;
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 0 0 auto;
+    width: 80%;
+    padding: 0 0 60px;
+}
+
+.section__contents {
+    padding: 5%;
+    position: relative;
+    width: 100%;
+}
+
+.section__contents--ttls.big-ttls {
+    font-size: 60px;
+    margin-bottom: 1%;
+}
+
+.section__contents--text.middle-text {
+    margin: 0 0 2%;
+}
+
+.section__contents--navi {
+    justify-content: flex-start;
+    font-size: 16px;
+}
+
+.section__contents--navi li {
+    margin: 0 2% 0 0;
+}
+
+.section__contents--navi a {
+}
+
+.section__contents--ttls.middle-ttls {
+    font-size: 36px;
+}
+
+.section__contents--definition {
+    font-size: 16px;
+    border-bottom: 1px solid #3e3e3e;
+    padding: 1% 1%;
+}
+
+.section__contents--definition dt {
+    width: 200px;
+}
+
+.section__contents--definition dd {
+    width: calc(100% - 200px);
+}
+
+.text-link01 {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    padding: 0 28px 2px 0;
+    position: relative;
+}
+
+.text-link01::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 0 10px;
+    border-color: transparent transparent transparent #000000;
+    bottom: 0;
+    right: 0;
+}
+
+.sub-section {
+    height: 100vh;
+}
+
+.sub-section .container {
+    margin: 0 auto 0 0;
+}
+
+.sub-section.rev .container {
+    margin: 0 0 0 auto;
+}
+
+.next-section {
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    font-weight: bold;
+}
+
+.read {
+    padding: 0 0 1%;
+}
+
+.news {
+    padding: 0 0 3%;
+}
+
+.news .section__contents--ttls {
+    margin: 0 0 1%;
+}
+
+.news__list {
+}
+
+.news__list li {
+    margin: 0 0 1%;
+}
+
+.news__list a {
+    display: block;
+    font-size: 16px;
+}
+
+.news__list .category {
+    padding: 2px 10px 6px;
+    color: #FFF;
+    background: #000;
+    display: inline-block;
+}
+
+.news__list .date {
+    padding: 0px 1% 0;
+position: relative;}
+
+.contentslist .section__contents--ttls {
+    margin: 0 0 1%;
+}
+
+.profiles {
+    padding: 0 0 3%;
+}
+
+.profiles .section__contents--ttls {
+    margin: 0 0 1%;
+}
+
+.profiles .section__contents--text {
+    margin: 0 0 2%;
+}
+
+.skills {
+    padding: 0 0 3%;
+}
+
+.skills .section__contents--ttls {
+    margin: 0 0 1%;
+}
+
+.sns .section__contents--ttls {
+    margin: 0 0 1%;
+}
+
+.privacypolicy .section__contents--ttls {
+    margin: 0 0 1%;
+}
+
+.privacypolicy .section__contents--subttls {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 2px 6px;
+    border-bottom: 1px solid #000;
+    border-left: 6px solid #000;
+    margin: 0 0 1%;
+}
+
+.privacypolicy .section__contents--text {
+    margin: 0 0 2%;
+}
+
+.footer {
+    background: #3e3e3e;
+    position: fixed;
+    width: 380px;
+    bottom: 0;
+    right: 0;
+    padding: 10px 3% 10px 0;
+    z-index: 255;
+    height: 60px;
+}
+
+.footer .container {
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.footer .container .copyright {
+    color: #FFF;
+    font-size: 12px;
+    text-align: right;
+}

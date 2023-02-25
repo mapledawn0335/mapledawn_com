@@ -1,0 +1,158 @@
+@charset "UTF-8"; /*SP*/
+.sp {
+    display: block;
+}
+
+.pc {
+    display: none;
+}
+
+.youtube {
+    padding-top: 56.25%;
+}
+
+.table-layout {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.table-layout {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.table-layout::-webkit-scrollbar {
+    height: 6px;
+    background: #FFF;
+}
+
+.table-layout::-webkit-scrollbar-track {
+    background: inherit;
+}
+
+.table-layout::-webkit-scrollbar-thumb {
+    background: #CDCFD2;
+    border-radius: 10px;
+}
+
+p {
+    word-wrap: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #313131;
+}
+
+/*============================
+COMMON
+============================*/
+.header {
+    top: 0;
+    width: 100%;
+}
+
+.main {
+    margin: 60px 0 0;
+}
+
+.section {
+    height: auto;
+}
+
+.section .container {
+    width: 95%;
+    background: rgba(255,255,255,0.95);
+}
+
+.main-section .section__contents {
+    padding: 5%;
+}
+
+.section__contents--ttls.big-ttls {
+    font-size: 45px;
+}
+
+.section__contents--text.middle-text {
+    margin: 0 0 20px;
+}
+
+.section__contents--navi li {
+    margin: 0 20px 0 0;
+}
+
+.section__contents--ttls.middle-ttls {
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+
+.section__contents--definition {
+    font-size: 14px;
+}
+
+.section__contents--definition dt {
+    width: 120px;
+}
+
+.section__contents--definition dd {
+    width: calc(100% - 120px);
+}
+
+.text-link01 {
+    font-size: 16px;
+}
+
+.next-section {
+    display: none;
+}
+
+.read {
+    padding: 0 0 10px;
+}
+
+.news {
+    padding: 0 0 20px;
+}
+
+.news__list li {
+    margin: 0 0 15px;
+}
+
+.news__list .category {
+    font-size: 12px;
+    margin: 0 0 5px;
+}
+
+.news__list .date {
+    padding: 0px 3% 0;
+    top: 2px;
+}
+
+.profiles {
+    padding: 0 0 30px;
+}
+
+.profiles .section__contents--text {
+    margin: 0 0 20px;
+}
+
+.skills {
+    padding: 0 0 30px;
+}
+
+.privacypolicy .section__contents--subttls {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.privacypolicy .section__contents--text {
+    margin: 0 0 20px;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+}
+
+.footer .container {
+    justify-content: center;
+}
